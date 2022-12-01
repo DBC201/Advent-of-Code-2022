@@ -1,0 +1,14 @@
+﻿cmake_minimum_required (VERSION 3.8)
+
+project (AOC2021)
+set(CMAKE_CXX_STANDARD 20)
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+add_executable(test_all ${CMAKE_CURRENT_SOURCE_DIR}/test/test_all.cpp)
+
+set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/source)
+
+add_executable(day_1 ${SOURCE_DIR}/01.cpp)
+set_target_properties(day_1 PROPERTIES EXCLUDE_FROM_ALL TRUE)
+
