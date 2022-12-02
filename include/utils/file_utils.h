@@ -26,7 +26,7 @@ namespace utils::file_utils {
 		file.close();
 	}
 
-	/*
+	/**
 	* @param file_path path to file to be read
 	* @param lambda takes line and returns parsed data to be added to final vector
 	* @returns vector of given template type

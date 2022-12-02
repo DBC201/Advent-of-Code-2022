@@ -12,7 +12,7 @@ using utils::string_utils::convert_string;
 using solutions::day_0::Day0;
 
 namespace solutions::day_1 {
-	const std::string day_id = "00";
+	const std::string day_id = "01";
 
 	class Day1: public Day0 {
 	public:
