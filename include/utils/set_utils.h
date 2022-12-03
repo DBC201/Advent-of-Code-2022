@@ -5,8 +5,17 @@
 
 namespace utils::set_utils {
 
+	/**
+	 * @brief Set the intersection object
+	 * 
+	 * just finds if the element is duplicate, does not do intersection
+	 * 
+	 * @tparam Tset 
+	 * @param sets 
+	 * @return Tset 
+	 */
 	template<typename Tset>
-	Tset set_intersection(std::vector<Tset> sets) {
+	Tset duplicate_element(std::vector<Tset> sets) {
 		Tset intersection_set;
 		Tset prev;
 		for (const auto &set: sets) {
@@ -17,6 +26,17 @@ namespace utils::set_utils {
 				prev.insert(element);
 			}
 		}
+		return intersection_set;
+	};
+
+	template<typename Tset>
+	Tset set_intersection(Tset a, Tset b) {
+		Tset intersection_set;
+		for (const auto &element: a) {
+				if (b.contains(element)) {
+					intersection_set.insert(element);
+				}
+			}
 		return intersection_set;
 	};
 
