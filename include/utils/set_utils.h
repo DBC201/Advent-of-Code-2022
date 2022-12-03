@@ -6,9 +6,7 @@
 namespace utils::set_utils {
 
 	/**
-	 * @brief Set the intersection object
-	 * 
-	 * just finds if the element is duplicate, does not do intersection
+	 * @brief get the elements that occur more than once
 	 * 
 	 * @tparam Tset 
 	 * @param sets 
