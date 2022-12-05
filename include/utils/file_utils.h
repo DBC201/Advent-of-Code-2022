@@ -28,7 +28,7 @@ namespace utils::file_utils {
 
 	/**
 	* @param file_path path to file to be read
-	* @param lambda a lambda function that takes two arguments, line as string and container (container should be taken as reference)
+	* @param lambda 
 	*/
 	void process_lines(std::string file_path, auto lambda) {
 		std::string line;
