@@ -28,6 +28,24 @@ namespace utils::file_utils {
 
 	/**
 	* @param file_path path to file to be read
+	* @param lambda a lambda function that takes two arguments, line as string and container (container should be taken as reference)
+	*/
+	void process_lines(std::string file_path, auto lambda) {
+		std::string line;
+		std::fstream file;
+		file.open(file_path, std::fstream::in);
+		if (!file.is_open()) {
+			std::cerr << "Unable to open " + file_path << std::endl;
+			exit(EXIT_FAILURE);
+		}
+		while (std::getline(file, line)) {
+			lambda(line);
+		}
+		file.close();
+	}
+
+	/**
+	* @param file_path path to file to be read
 	* @param lambda takes line and returns parsed data to be added to final vector
 	* @returns vector of given template type
 	*/
