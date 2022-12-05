@@ -15,8 +15,6 @@ namespace utils::regex_utils {
 			}
 
 			/**
-			 * @brief 
-			 * 
 			 * @param s 
 			 * @param lambda takes smatch object, some functions are: smatch.str(0), smatch.position(0)
 			 */
