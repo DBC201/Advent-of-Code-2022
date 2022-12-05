@@ -15,10 +15,10 @@ namespace utils::regex_utils {
 			}
 
 			/**
-			 * @brief custom handle all found smatch objects (ex: smatch.str(0), smatch.position(0))
+			 * @brief 
 			 * 
 			 * @param s 
-			 * @param lambda 
+			 * @param lambda takes smatch object, some functions are: smatch.str(0), smatch.position(0)
 			 */
 			void handleMatches(std::string s, auto lambda) {
 				std::vector<std::smatch> matches;
