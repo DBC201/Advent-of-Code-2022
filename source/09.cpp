@@ -20,26 +20,26 @@ void move_knot(int &hx, int &hy, int &tx, int &ty)
 	int ady = std::abs(dy);
 
 	if (adx > 1 && ady > 1) {
-		tx += dx > 0 ? 1 : dx < 0 ? -1 : 0;
-		ty += dy > 0 ? 1 : dy < 0 ? -1 : 0;
+		tx += dx > 0 ? 1 : -1;
+		ty += dy > 0 ? 1 : -1;
 	}
 	else if (adx > 1 && ady > 0)
 	{
-		tx += dx > 0 ? 1 : dx < 0 ? -1 : 0;
+		tx += dx > 0 ? 1 : -1;
 		ty = hy;
 	}
 	else if (adx > 1)
 	{
-		tx += dx > 0 ? 1 : dx < 0 ? -1 : 0;
+		tx += dx > 0 ? 1 : -1;
 	}
 	else if (ady > 1 && adx > 0)
 	{
 		tx = hx;
-		ty += dy > 0 ? 1 : dy < 0 ? -1 : 0;
+		ty += dy > 0 ? 1 : -1;
 	}
 	else if (ady > 1)
 	{
-		ty += dy > 0 ? 1 : dy < 0 ? -1 : 0;
+		ty += dy > 0 ? 1 : -1;
 	}
 }
 
