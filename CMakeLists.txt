@@ -38,3 +38,6 @@ set_target_properties(day_9 PROPERTIES EXCLUDE_FROM_ALL TRUE)
 
 add_executable(day_10 ${SOURCE_DIR}/10.cpp)
 set_target_properties(day_10 PROPERTIES EXCLUDE_FROM_ALL TRUE)
+
+add_executable(day_11 ${SOURCE_DIR}/11.cpp)
+set_target_properties(day_11 PROPERTIES EXCLUDE_FROM_ALL TRUE)
